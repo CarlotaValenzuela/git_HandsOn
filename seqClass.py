@@ -4,6 +4,7 @@ import sys, re
 from argparse import ArgumentParser
 
 parser = ArgumentParser(description = 'Classify a sequence as DNA or RNA')
+parser.add_argument('-s', '--seq', required=True, help='Input sequence to classify')
 
 if len(sys.argv) == 1:
     parser.print_help()
