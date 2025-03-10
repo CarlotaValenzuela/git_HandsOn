@@ -3,7 +3,7 @@
 import sys, re
 from argparse import ArgumentParser
 
-parser = ArgumentParser(description='This script classifies a nucleotide sequence.')
+parser = ArgumentParser(description = 'Classify a sequence as DNA or RNA')
 
 if len(sys.argv) == 1:
     parser.print_help()
